@@ -1,0 +1,121 @@
+/* Base Reset */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f7f9fc;
+  color: #333;
+}
+
+/* Basket Container */
+.basket {
+  max-width: 700px;
+  margin: 3rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+/* Title */
+.basket h1 {
+  text-align: center;
+  color: #0066cc;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+/* Form Styling */
+.input-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.input-form input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.input-form button {
+  background: #0066cc;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 200px;
+  margin: auto;
+}
+
+.input-form button:hover {
+  background: #004c99;
+}
+
+/* Item List */
+.item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Basket Item */
+.basket-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f5fa;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.basket-body p {
+  margin: 0.2rem 0;
+  font-size: 1rem;
+}
+
+.nama-barang {
+  font-weight: bold;
+  color: #0066cc;
+}
+
+.jumlah-barang {
+  color: #333;
+}
+
+.keterangan {
+  font-style: italic;
+  color: #666;
+}
+
+/* Delete Button */
+.delete-button {
+  background: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.delete-button:hover {
+  background: #cc0000;
+}
+.nama-barang::before {
+  content: " Nama Barang: ";
+  color: #0066cc;
+}
+.jumlah-barang::before {
+  content: " Jumlah: ";
+  color: #333;
+}
+.keterangan::before {
+  content: " Keterangan: ";
+  color: #666;
+}
